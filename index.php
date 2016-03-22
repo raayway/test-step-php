@@ -9,7 +9,10 @@ if ("/index.php" === $uri || "/" === $uri) {
     show_action($_GET['id']);
 } else if ("/index.php/add/" === $uri) {
     add_action();
-} else {
+} else if ("index.php/create/post/" === $uri && isset($_POST['title'])) {
+    create_post_action();
+} 
+else {
     header('Status: 404 Not Found');
     echo "<html><body><h1>Page Not Found $uri</h1></body></html>";
 }

@@ -28,11 +28,8 @@ function get_post_by_id($id){
     return $row;
 }
 
-function add_new_post()
-{
-   
-    $text = $_POST['text'];
-    $title = $_POST['title'];
+function add_new_post($text, $title)
+{       
     if($text != "" and $title != "")
     {
         $link = open_database_connection();
