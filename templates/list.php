@@ -9,7 +9,7 @@
     </li>
     <?php endforeach;?>
 </ul>
-<a href="/index.php/add/">Add</a>
+<a href="/index.php/post/">Add</a>
 <?php $content = ob_get_clean()?>
 
 <?php include 'layout.php'?>
