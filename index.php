@@ -7,9 +7,9 @@ if ("/index.php" === $uri || "/" === $uri) {
     list_action();
 } else if ("/index.php/show/" === $uri && isset($_GET['id'])) {
     show_action($_GET['id']);
-} else if ("/index.php/add/" === $uri) {
+} else if ("/index.php/post/" === $uri) {
     add_action();
-} else if ("index.php/create/post/" === $uri && isset($_POST['title'])) {
+} else if ("index.php/post/create/" === $uri && isset($_POST['title'])) {
     create_post_action();
 } 
 else {
