@@ -20,5 +20,5 @@ function create_post_action()
     $text = $_POST['text'];
     $title = $_POST['title'];
     add_new_post($text, $title);
-    require "templates/list.php";
+    list_action();
 }
