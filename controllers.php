@@ -19,6 +19,7 @@ function create_post_action()
 {
     $text = $_POST['text'];
     $title = $_POST['title'];
+    echo "Text ".$text." Title".$title;
     add_new_post($text, $title);
     list_action();
 }
